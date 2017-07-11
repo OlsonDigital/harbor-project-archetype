@@ -1,0 +1,11 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/${rootArtifactId}" />
+    <filter root="/etc/designs/${rootArtifactId}">
+        <exclude pattern="/etc/designs/${rootArtifactId}/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/etc/packages/harbor/harbor-ui-${harbor.version}.zip"/>
+</workspaceFilter>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.icfolson.aem.harbor</groupId>
+        <artifactId>harbor</artifactId>
+        <version>2.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>${groupId}</groupId>
+    <artifactId>${artifactId}</artifactId>
+    <packaging>pom</packaging>
+    <version>${version}</version>
+    <name>${clientPrettyName}</name>
+
+    <modules>
+        <module>${rootArtifactId}-core</module>
+        <module>${rootArtifactId}-ui</module>
+    </modules>
+
+    <properties>
+        <core.artifactId>${rootArtifactId}-core</core.artifactId>
+
+        <!-- versions -->
+        <harbor.version>2.0.0-SNAPSHOT</harbor.version>
+        <component.plugin.version>5.0.0-SNAPSHOT</component.plugin.version>
+        <package.plugin.version>0.6.0</package.plugin.version>
+        <osgi.bundle.status.plugin.version>2.0.2</osgi.bundle.status.plugin.version>
+
+        <!-- defaults -->
+        <package.skip>true</package.skip>
+        <osgi.bundle.status.skip>true</osgi.bundle.status.skip>
+        <aem.username>admin</aem.username>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <activation>
+                <property>
+                    <name>local</name>
+                </property>
+            </activation>
+            <properties>
+                <package.skip>false</package.skip>
+                <osgi.bundle.status.skip>false</osgi.bundle.status.skip>
+                <aem.host.author>localhost</aem.host.author>
+                <aem.host.publish>localhost</aem.host.publish>
+                <aem.port.author>4502</aem.port.author>
+                <aem.port.publish>4503</aem.port.publish>
+                <aem.username.author>admin</aem.username.author>
+                <aem.username.publish>admin</aem.username.publish>
+                <aem.password.author>admin</aem.password.author>
+                <aem.password.publish>admin</aem.password.publish>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>1.3.1</version>
+                <configuration>
+                    <generateBackupPoms>false</generateBackupPoms>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.icfolson.aem.harbor</groupId>
+                <artifactId>harbor-api</artifactId>
+                <version>${harbor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.icfolson.aem.harbor</groupId>
+                <artifactId>harbor-core</artifactId>
+                <version>${harbor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.icfolson.aem.harbor</groupId>
+                <artifactId>harbor-ui</artifactId>
+                <version>${harbor.version}</version>
+                <type>zip</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

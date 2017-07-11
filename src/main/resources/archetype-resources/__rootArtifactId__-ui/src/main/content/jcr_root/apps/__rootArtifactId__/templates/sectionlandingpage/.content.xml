@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:icf="http://www.icfolson.com/ns/aem/"
+          jcr:primaryType="cq:Template"
+          jcr:title="${clientPrettyName} - Section Landing Page"
+          allowedPaths="/content(/.*)?"
+          allowedParents="[/apps/${rootArtifactId}/templates/homepage,/apps/${rootArtifactId}/templates/sectionlandingpage]"
+          ranking="0">
+    <jcr:content
+            jcr:primaryType="cq:PageContent"
+            cq:designPath="/etc/designs/${rootArtifactId}"
+            sling:resourceType="${rootArtifactId}/components/page/sectionlandingpage"
+            rdf:type="icf:SectionLandingPage"/>
+</jcr:root>
