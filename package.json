@@ -1,0 +1,31 @@
+{
+  "name": "harbor-project-archetype-frontend-build",
+  "version": "1.0.0",
+  "description": "Frontend build steps for the Harbor Project Archetype.  Responsible for setting up bootstrapped ... Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlsonDigital/harbor-project-archetype.git"
+  },
+  "author": "ICF Olson",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/OlsonDigital/harbor-project-archetype/issues"
+  },
+  "homepage": "https://github.com/OlsonDigital/harbor-project-archetype#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.3.0"
+  }
+}
