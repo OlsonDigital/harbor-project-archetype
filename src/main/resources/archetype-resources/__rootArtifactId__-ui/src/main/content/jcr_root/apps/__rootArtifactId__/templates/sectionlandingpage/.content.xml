@@ -11,6 +11,7 @@
           ranking="0">
     <jcr:content
             jcr:primaryType="cq:PageContent"
+            jcr:mixinTypes="[icf:SectionLandingPage]"
             cq:designPath="/etc/designs/${rootArtifactId}"
             sling:resourceType="${rootArtifactId}/components/page/sectionlandingpage"
             rdf:type="icf:SectionLandingPage"/>

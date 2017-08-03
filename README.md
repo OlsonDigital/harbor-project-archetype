@@ -19,7 +19,7 @@ For use with AEM 6.3
 
 ## Example Usage
 
-`mvn archetype:generate -DarchetypeGroupId=com.icfolson.aem.harbor -DarchetypeArtifactId=harbor-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=com.clientname -DartifactId=clientname -DclientPrettyName="The Name of The Client" -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false`
+`mvn archetype:generate -DarchetypeGroupId=com.icfolson.aem.harbor -DarchetypeArtifactId=harbor-project-archetype -DarchetypeVersion=1.0.0-SNAPSHOT -DgroupId=com.clientname -DartifactId=client-name -DclientPrettyName="The Name of The Client" -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false`
 
 ## Versioning
 

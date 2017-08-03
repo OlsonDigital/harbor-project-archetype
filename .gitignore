@@ -16,3 +16,5 @@ maven-eclipse.xml
 src/main/resources/archetype-resources/__rootArtifactId__-ui/src/main/content/jcr_root/etc/designs/__rootArtifactId__/fonts/
 src/main/resources/archetype-resources/__rootArtifactId__-ui/src/main/content/jcr_root/etc/designs/__rootArtifactId__/*.css
 src/main/resources/archetype-resources/__rootArtifactId__-ui/src/main/content/jcr_root/etc/designs/__rootArtifactId__/*.js
+
+node_modules/

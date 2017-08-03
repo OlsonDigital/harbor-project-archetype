@@ -50,6 +50,18 @@
                         <include>**/*.xml</include>
                     </includes>
                 </fileSet>
+                <fileset filtered="false" encoding="UTF-8">
+                    <directory>src/main/content/jcr_root/etc/designs</directory>
+                    <includes>
+                        <include>**/*.css</include>
+                        <include>**/*.js</include>
+                        <include>**/*.eot</include>
+                        <include>**/*.svg</include>
+                        <include>**/*.ttf</include>
+                        <include>**/*.woff</include>
+                        <include>**/*.woff2</include>
+                    </includes>
+                </fileset>
                 <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/main/content</directory>
                     <includes>
