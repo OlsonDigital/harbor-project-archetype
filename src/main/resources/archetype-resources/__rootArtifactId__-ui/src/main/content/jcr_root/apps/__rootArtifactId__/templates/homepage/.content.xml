@@ -6,11 +6,9 @@
           xmlns:icf="http://www.icfolson.com/ns/aem/"
           jcr:primaryType="cq:Template"
           jcr:title="${clientPrettyName} - Home Page"
-          allowedPaths="/content(/.*)?"
           ranking="0">
     <jcr:content
             jcr:primaryType="cq:PageContent"
-            jcr:mixinTypes="[icf:HomePage]"
             cq:designPath="/etc/designs/${rootArtifactId}"
             sling:resourceType="${rootArtifactId}/components/page/homepage"
             rdf:type="icf:HomePage"/>

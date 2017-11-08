@@ -4,5 +4,5 @@
           xmlns:jcr="http://www.jcp.org/jcr/1.0"
           cq:isContainer="{Boolean}false"
           jcr:primaryType="cq:Component"
-          sling:resourceSuperType="harbor/components/page/common/global" />
+          sling:resourceSuperType="${rootArtifactId}/components/page/global" />
           

@@ -14,8 +14,8 @@ For use with AEM 6.3
 
 | Dependency  | Version |
 | ----------- | ------- |
-| Harbor      | 2.0.0-SNAPSHOT |
-| CQ Component Maven Plugin | 5.0.0-SNAPSHOT |
+| Harbor      | 3.0.0 |
+| CQ Component Maven Plugin | 5.0.0 |
 
 ## Example Usage
 

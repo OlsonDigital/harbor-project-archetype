@@ -161,6 +161,7 @@
                     <password>${aem.password.author}</password>
                     <skip>${package.skip}</skip>
                     <installRecursive>true</installRecursive>
+                    <dependencyHandling>ignore</dependencyHandling>
                 </configuration>
             </plugin>
             <plugin>
