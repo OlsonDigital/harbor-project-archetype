@@ -50,7 +50,7 @@
                         <include>**/*.xml</include>
                     </includes>
                 </fileSet>
-                <fileset filtered="false" encoding="UTF-8">
+                <fileSet filtered="false" encoding="UTF-8">
                     <directory>src/main/content/jcr_root/etc/designs</directory>
                     <includes>
                         <include>**/*.css</include>
@@ -61,7 +61,7 @@
                         <include>**/*.woff</include>
                         <include>**/*.woff2</include>
                     </includes>
-                </fileset>
+                </fileSet>
                 <fileSet filtered="true" encoding="UTF-8">
                     <directory>src/main/content</directory>
                     <includes>
