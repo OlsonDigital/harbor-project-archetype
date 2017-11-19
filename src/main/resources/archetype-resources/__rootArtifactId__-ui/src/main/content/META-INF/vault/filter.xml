@@ -7,5 +7,6 @@
     <filter root="/etc/designs/${rootArtifactId}">
         <exclude pattern="/etc/designs/${rootArtifactId}/jcr:content(/.*)?"/>
     </filter>
+    <filter root="/content/${rootArtifactId}"/>
     <filter root="/etc/packages/harbor/harbor-ui-${harbor.version}.zip"/>
 </workspaceFilter>
